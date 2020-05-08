@@ -1,0 +1,34 @@
+@import 'reset.scss';
+
+body{
+    background: #f8fab8;
+    header{
+        background: #ccf0e1;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+
+
+        .top-header{
+            background:#f8dc88;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            padding-top: 20px;
+
+            
+            h1{
+                font-family: sarina, sans-serif;
+                font-size: 30px;
+                color: white;
+                padding:5px;
+                p{
+                    background: pink;
+                    height: 20px;
+                } 
+            }
+        }
+
+
+    }
+}
