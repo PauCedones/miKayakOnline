@@ -54,6 +54,7 @@ table {
 
 body {
   background: #f8fab8;
+  font-family: fira-sans, sans-serif;
 }
 body header {
   background: #ccf0e1;
@@ -67,6 +68,7 @@ body header .top-header {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
+  padding: 20px;
 }
 body header .top-header h1 {
   font-family: sarina, sans-serif;
@@ -77,6 +79,43 @@ body header .top-header h1 {
 body header .top-header h1 p {
   background: pink;
   height: 20px;
+}
+body header .top-header #carrito {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body header .top-header #carrito i {
+  color: white;
+  margin-bottom: 10px;
+}
+body header .top-header #carrito .contenedor-carrito {
+  display: none;
+  width: auto;
+  background: white;
+  padding: 15px;
+}
+body header .top-header #carrito .contenedor-carrito .caracteristicas {
+  display: flex;
+}
+body header .top-header #carrito .contenedor-carrito .caracteristicas p {
+  padding: 5px;
+}
+body header .top-header #carrito .contenedor-carrito i {
+  cursor: pointer;
+}
+body header .top-header #carrito .contenedor-carrito a {
+  font-size: 10px;
+  width: 20px;
+  background: pink;
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+body header .top-header #carrito:hover .contenedor-carrito {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,22 +1,22 @@
 @import 'reset.scss';
+@import 'variables.scss';
+
 
 body{
-    background: #f8fab8;
+    background: $amarillo;
+    font-family: fira-sans, sans-serif;
     header{
-        background: #ccf0e1;
+        background: $celeste;
         width: auto;
         display: flex;
         flex-direction: column;
-
-
         .top-header{
-            background:#f8dc88;
+            background:$naranja;
             display: flex;
             flex-direction: column;
             align-items:center;
             padding-top: 20px;
-
-            
+            padding: 20px;    
             h1{
                 font-family: sarina, sans-serif;
                 font-size: 30px;
@@ -26,6 +26,48 @@ body{
                     background: pink;
                     height: 20px;
                 } 
+            }
+            #carrito{
+                margin-top:20px;
+                display:flex;
+                flex-direction: column;
+                align-items:center;
+                
+                i{
+                    color: white;
+                    margin-bottom: 10px;
+                    
+                    
+                }
+                
+                .contenedor-carrito{
+                    display: none;
+                    width: auto;
+                    background: white;
+                    padding: 15px;
+                    .caracteristicas{
+                        display: flex;
+                        p{
+                            padding:5px;
+                        }
+                    }
+                    i{
+                        cursor:pointer;
+                    }
+                    a{
+                        font-size: 10px;
+                        width: 20px;
+                        background: pink;
+                        padding: 5px;
+                        color: black;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                    
+                }
+                &:hover .contenedor-carrito{
+                    display: block;
+                }
             }
         }
 
