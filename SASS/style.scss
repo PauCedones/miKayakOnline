@@ -40,37 +40,107 @@ body{
                     
                 }
                 
-                .contenedor-carrito{
+                #lista-carrito{
                     display: none;
                     width: auto;
                     background: white;
                     padding: 15px;
-                    .caracteristicas{
-                        display: flex;
-                        p{
-                            padding:5px;
-                        }
-                    }
-                    i{
-                        cursor:pointer;
-                    }
                     a{
                         font-size: 10px;
-                        width: 20px;
+                        
                         background: pink;
                         padding: 5px;
                         color: black;
                         text-decoration: none;
                         cursor: pointer;
                     }
+                    .lista-carrito-titulos{
+                        display: flex;
+                        padding: 5px;
+                        p{
+                            padding:10px;
+                        }
+                    }
                     
                 }
-                &:hover .contenedor-carrito{
+                &:hover #lista-carrito{
                     display: block;
                 }
+                
             }
         }
+        .descripcion{
+            padding: 20px;
+            text-align: center;
+            h2{
+                margin-bottom: 15px;
+            }
+            .buscador{
+                background: pink;
+                width:250px;
+                height: 30px;
+                font-size: 20px;
+                text-align: center;
+                border:none;
+            }
+            button{
+                width:250px;
+                height: 30px; 
+                background: $naranja;
+                border:none;
+                cursor:pointer;
+            }
+        }
+    }
+    .catalogo-kayak{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin:15px;
+        h1{
+            font-size: 40px;
+            padding:50px;
+        }
+        .card{
+            
+            margin: 10px;
+            padding:15px;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            background: $naranja;
+            .info-card{
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+            }
+            img{
+                width: 250px;
+                margin:20px;
+                
+            }
+            h4{
+                margin:5px;
+                padding: 5px;
+                font-size: 15px;
+                background: $celeste;
+            }
+            h5{
+                font-size: 15px;
+                margin:10px;
 
+            }
+            button{
+                background: pink;
+                border: none;
+                width: auto;
+                height: 30px;
+                cursor: pointer;
+                &:hover {
+                    background: $amarillo;
+                }
+            }
 
+        }
     }
 }

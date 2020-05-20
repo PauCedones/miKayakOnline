@@ -23,28 +23,62 @@
             <!--CARRITO-->
             <div id="carrito">
                 <i class="fas fa-shopping-cart fa-2x"></i>
-                <div class="contenedor-carrito">
-                    <div class="caracteristicas">
+                <div id="lista-carrito" >
+                    <div class="lista-carrito-titulos">
                         <p>Imagen</p>
                         <p>Nombre</p>
-                        <p>precio</p>
-                    </div>
+                        <p>Precio</p>
+                    </div>                     
+                    <!--aca es donde se van a alojar las posibles compras-->
+                    <div></div>
                     <a href="#" id="vaciar-carrito">VACIAR CARRITO</a>
                 </div>
                                
             </div>
         </section>
         
-        <section>
-            <h1>Busca tu kayak ideal</h1>
+        <section class="descripcion">
+            <h1>Busca tu kayak ideal.</h1>
             <h2>El mejor sitio de habla hispana para encontrar tu kayak</h2>
             <form>
-                <input type="text" placeholder="modelo de kayak"/>
-                <input type="submit"/>
+                <input class="buscador"type="text" placeholder="modelo de kayak"/>
+                <button>BUSCAR</button>
             </form>
         </section>
         
     </header>
+
+    <section class="catalogo-kayak">
+        <h1>CATALOGO</h1>
+        <div class="card">
+            <img src="./img/kayak1.png" alt="kayak cormoran imagen">
+            <div class="info-card">
+                <h4>Kayak ASIAK Cormoran</h4>
+                <h5>$80.000</h5>
+                <button>Agregar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./img/kayak2.png" alt="kayak cormoran imagen">
+            <div class="info-card">
+                <h4>Kayak MG Patagonico </h4>
+                <h5>$80.000</h5>
+                <button>Agregar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./img/kayak3.png" alt="kayak cormoran imagen">
+            <div class="info-card">
+                <h4>Kayak ATLANTICK Boreal </h4>
+                <h5>$80.000</h5>
+                <button>Agregar</button>
+            </div>
+        </div>
+
+    </section>
+
     <script src="index.js"></script>
 </body>
 </html>
