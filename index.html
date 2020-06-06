@@ -30,7 +30,7 @@
                         <p>Precio</p>
                     </div>                     
                     <!--aca es donde se van a alojar las posibles compras-->
-                    <div></div>
+                    <div id="contenedor-carrito"></div>
                     <a href="#" id="vaciar-carrito">VACIAR CARRITO</a>
                 </div>
                                
@@ -48,32 +48,33 @@
         
     </header>
 
-    <section class="catalogo-kayak">
+    <section class="catalogo-kayak" id="lista-kayaks">
+
         <h1>CATALOGO</h1>
         <div class="card">
             <img src="./img/kayak1.png" alt="kayak cormoran imagen">
             <div class="info-card">
-                <h4>Kayak ASIAK Cormoran</h4>
-                <h5>$80.000</h5>
-                <button>Agregar</button>
+                <h4 class="titulo">Kayak ASIAK Cormoran</h4>
+                <h5 class="precio" data-id="1">$80.000</h5>
+                <button class="agregar-carrito">Agregar</button>
             </div>
         </div>
 
         <div class="card">
             <img src="./img/kayak2.png" alt="kayak cormoran imagen">
             <div class="info-card">
-                <h4>Kayak MG Patagonico </h4>
-                <h5>$80.000</h5>
-                <button>Agregar</button>
+                <h4 class="titulo">Kayak MG Patagonico </h4>
+                <h5 class="precio" data-id="2">$80.000</h5>
+                <button class="agregar-carrito">Agregar</button>
             </div>
         </div>
 
         <div class="card">
             <img src="./img/kayak3.png" alt="kayak cormoran imagen">
             <div class="info-card">
-                <h4>Kayak ATLANTICK Boreal </h4>
-                <h5>$80.000</h5>
-                <button>Agregar</button>
+                <h4 class="titulo">Kayak ATLANTICK Boreal </h4>
+                <h5 class="precio">$80.000</h5>
+                <button class="agregar-carrito" data-id="3">Agregar</button>
             </div>
         </div>
 

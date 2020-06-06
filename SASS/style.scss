@@ -75,13 +75,14 @@ body{
             h2{
                 margin-bottom: 15px;
             }
-            .buscador{
+            input{
                 background: pink;
                 width:250px;
                 height: 30px;
                 font-size: 20px;
                 text-align: center;
                 border:none;
+                
             }
             button{
                 width:250px;
@@ -89,6 +90,9 @@ body{
                 background: $naranja;
                 border:none;
                 cursor:pointer;
+                &:hover{
+                    background: $amarillo;
+                }
             }
         }
     }

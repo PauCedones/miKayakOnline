@@ -121,7 +121,7 @@ body header .descripcion {
 body header .descripcion h2 {
   margin-bottom: 15px;
 }
-body header .descripcion .buscador {
+body header .descripcion input {
   background: pink;
   width: 250px;
   height: 30px;
@@ -135,6 +135,9 @@ body header .descripcion button {
   background: #f8dc88;
   border: none;
   cursor: pointer;
+}
+body header .descripcion button:hover {
+  background: #f8fab8;
 }
 body .catalogo-kayak {
   display: flex;
