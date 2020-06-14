@@ -2,6 +2,7 @@
 const carrito = document.querySelector('#carrito');
 const kayaks = document.querySelector('#lista-kayaks');
 const listaKayaks = document.querySelector('#lista-carrito #contenedor-carrito');
+const vaciarCarritoBTN = document.querySelector('#vaciar-carrito');
 
 
 //LISTENERS ////
@@ -10,6 +11,12 @@ cargarEventListeners();
 function cargarEventListeners(){
     //Dispara cuando se presiona agregar carrito
     kayaks.addEventListener('click', comprarKayak);
+
+    //cuando se elimina el kayak del carrito
+    carrito.addEventListener('click', eliminarKayak);
+
+    //vaciar todo el carrito de compra
+    vaciarCarritoBTN.addEventListener('click', vaciarCarrito);
 }
 
 //FUNCIONES ////
@@ -49,3 +56,22 @@ function cargarEventListeners(){
         `;
         listaKayaks.appendChild(row);
     }
+
+        //Eliminar kayak del carrito
+    function eliminarKayak (e) {
+        e.preventDefault();
+
+        if(e.target.classList.contains('borrar-kayaks')) {
+            e.target.parentElement.remove();
+        }
+    }
+
+        //Eliminar todos los kayaks del carrito de compra
+    function vaciarCarrito () {
+        
+        while(listaKayaks.firstChild) {
+            listaKayaks.removeChild(listaKayaks.firstChild);
+        }
+        return false;
+    }
+
